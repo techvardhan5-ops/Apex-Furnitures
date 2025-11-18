@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex Furnishings – Products</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <h1 class="logo">Apex Furnishings</h1>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-page">
+        <div class="container">
+            <h2 class="section-title">Our Product Range</h2>
+            <p class="section-subtitle">Explore handcrafted furniture designed for comfort & durability.</p>
+
+            <!-- Search -->
+            <input type="text" id="searchInput" class="search-box" placeholder="Search products..." oninput="searchProducts()" />
+
+            <!-- Category Filters -->
+            <div class="filters">
+                <button class="filter-btn active" onclick="filterProducts('all')">All</button>
+                <button class="filter-btn" onclick="filterProducts('living')">Living Room</button>
+                <button class="filter-btn" onclick="filterProducts('bedroom')">Bedroom</button>
+                <button class="filter-btn" onclick="filterProducts('office')">Office</button>
+                <button class="filter-btn" onclick="filterProducts('dining')">Dining</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="productGrid">
+
+                <!-- Living Room Products -->
+                <div class="product-card" data-category="living" data-name="Premium Sofa Set">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" />
+                    <h3>Premium Sofa Set</h3>
+                    <p>Elegant comfort for modern living rooms.</p>
+                    <a href="contact.html" class="btn primary">Enquire</a>
+                </div>
+
+                <div class="product-card" data-category="living" data-name="Modern TV Unit">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" />
+                    <h3>Modern TV Unit</h3>
+                    <p>Stylish entertainment unit with storage.</p>
+                    <a href="contact.html" class="btn primary">Enquire</a>
+                </div>
+
+                <!-- Bedroom Products -->
+                <div class="product-card" data-category="bedroom" data-name="King Size Bed">
+                    <img src="https://images.unsplash.com/photo-1586105251261-72a756497a12" />
+                    <h3>King Size Bed</h3>
+                    <p>Premium wooden bed with cushioned headboard.</p>
+                    <a href="contact.html" class="btn primary">Enquire</a>
+                </div>
+
+                <div class="product-card" data-category="bedroom" data-name="Classic Wardrobe">
+                    <img src="https://images.unsplash.com/photo-1615874959478-5c2c8f5c7a6d" />
+                    <h3>Classic Wardrobe</h3>
+                    <p>Spacious storage with elegant finishing.</p>
+                    <a href="contact.html" class="btn primary">Enquire</a>
+                </div>
+
+                <!-- Office Furniture -->
+                <div class="product-card" data-category="office" data-name="Executive Office Chair">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" />
+                    <h3>Executive Office Chair</h3>
+                    <p>Ergonomic & comfortable for long hours.</p>
+                    <a href="contact.html" class="btn primary">Enquire</a>
+                </div>
+
+                <div class="product-card" data-category="office" data-name="Premium Office Desk">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc" />
+                    <h3>Premium Office Desk</h3>
+                    <p>Strong build with wooden finish.</p>
+                    <a href="contact.html" class="btn primary">Enquire</a>
+                </div>
+
+                <!-- Dining Furniture -->
+                <div class="product-card" data-category="dining" data-name="6-Seater Dining Table">
+                    <img src="https://images.unsplash.com/photo-1533777324565-a040eb52fac2" />
+                    <h3>6-Seater Dining Table</h3>
+                    <p>Perfect for family gatherings.</p>
+                    <a href="contact.html" class="btn primary">Enquire</a>
+                </div>
+
+                <div class="product-card" data-category="dining" data-name="Wooden Crockery Unit">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" />
+                    <h3>Wooden Crockery Unit</h3>
+                    <p>Stylish storage for your dining area.</p>
+                    <a href="contact.html" class="btn primary">Enquire</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <h3>Apex Furnishings</h3>
+            <p>Premium Quality Furniture for Home & Office</p>
+            <p>© 2025 Apex Furnishings. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
